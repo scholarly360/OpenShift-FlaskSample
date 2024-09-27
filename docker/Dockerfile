@@ -1,5 +1,6 @@
 #FROM registry.access.redhat.com/ubi9/python-39:1-117.1684741281
-FROM debian:bookworm-slim
+#FROM debian:bookworm-slim
+FROM python:3.11.10-slim-bullseye
 
 # By default, listen on port 8081
 EXPOSE 8081/tcp
