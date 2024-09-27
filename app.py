@@ -13,7 +13,7 @@ def hello():
 
 @app.route('/secret')
 def hello():
-    return str(os.environ['secret-sample-key'])
+    return str(os.environ.get("secret-sample-key","NO SECRET"))
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
